@@ -1,10 +1,10 @@
-.main {
+.content {
   width: 830px;
   height: auto;
   margin-left: 148px;
 }
 
-.main__title {
+.content__title {
   width: 839px;
   font-family: "inter regular", Arial, sans-serif;
   font-weight: 900;
@@ -14,7 +14,7 @@
   margin: 0 0 40px 0;
 }
 
-.main__quote {
+.content__quote {
   width: 738px;
   font-family: "inter regular", Arial, sans-serif;
   font-weight: 400;
@@ -24,7 +24,7 @@
   margin: 0 0 10px 0;
 }
 
-.main__author {
+.content__author {
   width: 732px;
   font-family: "inter regular", Arial, sans-serif;
   font-weight: 400;
@@ -35,7 +35,7 @@
   margin: 0 0 32px 0;
 }
 
-.main__text {
+.content__text {
   width: 722px;
   font-family: "inter regular", Arial, sans-serif;
   font-weight: 400;
@@ -46,14 +46,14 @@
 }
 
 @media (max-width: 1024px) {
-  .main {
+  .content {
     max-width: 720px;
     width: 100%;
     height: auto;
     margin: 0 auto;
   }
 
-  .main__title {
+  .content__title {
     max-width: 707px;
     width: 100%;
     font-size: 45px;
@@ -61,7 +61,7 @@
     margin: 0 0 50px 0;
   }
 
-  .main__quote {
+  .content__quote {
     max-width: 720px;
     width: 100%;
     font-size: 24px;
@@ -69,12 +69,12 @@
     margin: 0 0 26px 0;
   }
 
-  .main__author {
+  .content__author {
     max-width: 720px;
     width: 100%;
   }
 
-  .main__text {
+  .content__text {
     max-width: 720px;
     width: 100%;
     margin: 0 0 88px 0;
@@ -82,30 +82,30 @@
 }
 
 @media (max-width: 544px) {
-  .main {
+  .content {
     width: 288px;
     height: auto;
   }
 
-  .main__title {
+  .content__title {
     width: 296px;
     font-size: 30px;
     line-height: 35px;
     margin: 0 0 40px 0;
   }
 
-  .main__quote {
+  .content__quote {
     width: 285px;
     font-size: 24px;
     line-height: 30px;
     margin: 0 0 10px 0;
   }
 
-  .main__author {
+  .content__author {
     width: 270px;
   }
 
-  .main__text {
+  .content__text {
     width: 288px;
     margin: 0 0 64px 0;
   }
