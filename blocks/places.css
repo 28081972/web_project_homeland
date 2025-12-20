@@ -7,21 +7,23 @@
 .places__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto min-content auto;
+  grid-template-rows: auto 500px auto;
   margin: 0 0 80px 0;
 }
 
 .places__title {
-   font-family: "inter regular", Arial, sans-serif;
+  font-family: "inter regular", Arial, sans-serif;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
   color: #ffffff;
   margin: 0 0 48px 0;
+  align-self: center;
 }
 
 .places__website {
-  
+  align-self: end;
+  margin: 0 0 48px 0;
 }
 
 .places__website-title {
@@ -45,12 +47,15 @@
 }
 
 .places__image {
+  opacity: 1;
   margin-bottom: 48px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+  grid-column: 1;
+  grid-row: 2;
 }
 
-.places__image:hover{
-
+.places__image:hover {
+  opacity: 0.7;
 }
 
 .places__description {
@@ -60,13 +65,17 @@
   line-height: 1.6;
   color: #ffffff;
   margin: 0 0 25px 0;
+  grid-row: 2 / 4;
 }
 
 .places__button {
- 
   width: 289px;
   height: 48px;
-  background: linear-gradient(to right, #0278fe, #003a7b);
+  background: linear-gradient(
+    to right,
+    rgba(2, 120, 254, 1),
+    rgba(0, 58, 123, 1)
+  );
   border-color: #0278fe;
   text-decoration: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -81,102 +90,99 @@
 }
 
 .places__button:hover {
+  background: rgba(42, 44, 47, 0.7);
 }
 
-@media(max-width: 1024px){
-  .places{
+@media (max-width: 1024px) {
+  .places {
     max-width: 720px;
     width: 100%;
-}
-
-.places__container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto 380px auto;
-}
-
-.places__title{
-  display:flex;
-  align-items:center;
-  font-size: 42px;
-  line-height: 96px;
-
-}
-
-.places__website-title{
-  padding: 0;
-  margin: 0 0 5px 0;
-}
-
-.places__website-subtitle{
-  font-size:16px;
-
-}
-
-.places__image{
-
-  max-width: 340px;
-  width:100%;
-  height: auto;
-  display:block;
-  margin:0;
-  grid-column: 1;
-  grid-row: 2;
-
-}
-
-.places__description{
-  max-width:352px;
-  width: 100%;
-  font-size: 16px;
-  color: #ffffff;
-  grid-row: 2 / 4;
-}
-
-}
-
-@media(max-width: 544px){
-  .places{
-    max-width:305px;
-    width:100%;
   }
 
-  .places__container{
-    display:block;
-
+  .places__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 380px auto;
   }
 
-  .places__title{
-    max-width: 288px;
+  .places__title {
+    max-width: 480px;
     width: 100%;
-    font-size:32px;
-    line-height:35px;
-    margin: 0 auto 30px;;
-   
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 38px;
   }
 
-  .places__website{
-    max-width: 288px;
-    width: 100%;
-    margin: 0 auto 30px;;
+  .places__website-title {
+    padding: 0;
+    margin: 0 0 5px 0;
   }
 
-  .places__image{
-    max-width: 305px;
+  .places__website-subtitle {
+    font-size: 16px;
+  }
+
+  .places__image {
+    max-width: 340px;
     width: 100%;
     height: auto;
-    display:block;
-    margin-bottom: 30px;
+    display: block;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 2;
   }
 
-  .places__description{
+  .places__description {
+    max-width: 352px;
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    grid-row: 2 / 4;
+  }
+}
+
+@media (max-width: 544px) {
+  .places {
+    max-width: 305px;
+    width: 100%;
+  }
+
+  .places__container {
+    display: block;
+  }
+
+  .places__title {
     max-width: 288px;
-    width:100%;
-    font-size:16px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 35px;
     margin: 0 auto 30px;
   }
 
-  .places__button{
+  .places__website {
+    max-width: 288px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .places__image {
+    max-width: 305px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .places__description {
+    max-width: 288px;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto 30px;
+  }
+
+  .places__button {
     max-width: 288px;
     width: 100%;
     margin: 0 auto;
