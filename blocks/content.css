@@ -1,7 +1,7 @@
 .content__container {
   width: 830px;
   height: auto;
-  margin-left: 148px;
+  margin-left: 170px;
 }
 
 .content__title {
@@ -46,7 +46,7 @@
 }
 
 @media (max-width: 1024px) {
-  .content {
+  .content__container {
     max-width: 720px;
     width: 100%;
     height: auto;
@@ -82,9 +82,10 @@
 }
 
 @media (max-width: 544px) {
-  .content {
+  .content__container {
     width: 288px;
     height: auto;
+    margin: 0 auto;
   }
 
   .content__title {
